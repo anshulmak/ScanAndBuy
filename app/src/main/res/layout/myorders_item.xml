@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_layout"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp"
+        tools:ignore="UselessParent">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bill_logo"
+        android:src="@drawable/baseline_receipt_24px_color"
+        android:layout_marginStart="50dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="62dp"
+        android:textColor="@color/main_color"
+        android:layout_marginTop="5dp"
+        android:id="@+id/order_day"
+        android:textSize="25sp"
+        android:layout_below="@id/bill_logo"
+        android:text="30"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="53dp"
+        android:textColor="@color/main_color"
+        android:id="@+id/order_weekday"
+        android:textSize="12sp"
+        android:layout_below="@id/order_day"
+        android:text="Sunday"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="53dp"
+        android:textColor="@color/main_color"
+        android:id="@+id/order_month"
+        android:textSize="12sp"
+        android:layout_below="@id/order_weekday"
+        android:text="Jul 2018"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/bill_logo"
+        android:textColor="@color/black"
+        android:id="@+id/order_amount"
+        android:textSize="25sp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:text="4578"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/bill_logo"
+        android:textColor="@color/black"
+        android:id="@+id/order_items"
+        android:textSize="14sp"
+        android:alpha="0.6"
+        android:layout_below="@id/order_amount"
+        android:layout_marginStart="55dp"
+        android:text="4 items"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/bill_logo"
+        android:textColor="@color/black"
+        android:id="@+id/order_id"
+        android:textSize="12sp"
+        android:alpha="0.5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/order_items"
+        android:layout_marginStart="55dp"
+        android:text="Bill id - dadadasd"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

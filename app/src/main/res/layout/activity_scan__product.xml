@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scan_product_scroll"
+        android:layout_marginBottom="50dp"
+        >
+        <include layout="@layout/scan_product_details" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"
+        android:background="@color/white">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel_product"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/mid"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/cancel_buttonshape"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="casual"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/mid"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_to_cart"
+            android:layout_toEndOf="@id/mid"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/signin_buttonshape"
+            android:text="@string/add_to_the_cart"
+            android:textAllCaps="false"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:alpha="0.5"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="casual"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.minorproject.scanandbuy">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/scanandbuy_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/generalnotitle" />
+
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity
+            android:name=".Login_Activity"
+            android:theme="@style/generalnotitle">
+
+        </activity>
+        <activity
+            android:name=".signin_page"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".Signup_activity"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".Add_Product_Activity"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".AddProductScan"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".Scan_Product_Activity"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".Cart_Activity"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".Payments_Activity"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".order_activity"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".Myorders_Activity"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".GatePassActivity"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".GateScannerActivity"
+            android:theme="@style/generalnotitle" />
+        <activity android:name=".SplashScreen"
+            android:theme="@style/generalnotitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

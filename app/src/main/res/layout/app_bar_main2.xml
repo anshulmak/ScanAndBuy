@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".Main2Activity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_toStartOf="@id/cart_count"
+                    android:src="@drawable/baseline_shopping_cart_24px"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/cart_button"
+                    android:background="@null"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/cart_count"
+                    android:textAlignment="center"
+                    android:background="@drawable/home_send_shape"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+    <include layout="@layout/content_main2" />
+</android.support.design.widget.CoordinatorLayout>

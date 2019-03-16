@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Myorders_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_myorders"
+        android:background="@color/main_color"
+        android:padding="22dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/myorders_back"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/myorders_back"
+                android:layout_centerVertical="true"
+                android:text="My Bills"
+                android:layout_marginStart="20dp"
+                android:id="@+id/mycart"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/mycart"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:id="@+id/cart_items"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_myorders"
+        android:layout_marginTop="10dp"
+        android:id="@+id/mycards_recyclerview"/>
+
+</RelativeLayout>
